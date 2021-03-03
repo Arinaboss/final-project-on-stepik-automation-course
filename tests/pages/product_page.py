@@ -19,6 +19,16 @@ class ProductPage(BasePage):
         assert price.text == cart_price.text, f"expect {price.text} got {cart_price.text}"
         print(price.text, cart_price.text)
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def element_is_disappeared(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "The message did not disappear"
+
+
+
 
 
 
