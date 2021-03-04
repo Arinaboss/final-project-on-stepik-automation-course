@@ -17,7 +17,7 @@ class ProductPageLocators():
     NAME = (By.CSS_SELECTOR, "#messages>.alert:nth-child(1) strong")
     COST = (By.CSS_SELECTOR, ".product_page .product_main .price_color")
     PRICE = (By.CSS_SELECTOR, "#messages>.alert:nth-child(3) strong")
-    SUCCESS_MESSAGE =(By.CSS_SELECTOR, "#messages>.alert:nth-child(1) .alertinner")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages>.alert:nth-child(1) .alertinner")
 
 
 class BasePageLocators():
@@ -26,3 +26,8 @@ class BasePageLocators():
     BASKET = (By.CSS_SELECTOR, ".btn-group a")
     MESSAGE = (By.CSS_SELECTOR, "#content_inner")
     PRODUCT = (By.CSS_SELECTOR, "[class='basket-items']")
+    EMAIL = (By.CSS_SELECTOR, "[name='registration-email']")
+    PASSWORD = (By.CSS_SELECTOR, "[name='registration-password1']")
+    DBLEPASSWORD = (By.CSS_SELECTOR, "[name='registration-password2']")
+    BUTTON = (By.CSS_SELECTOR, "[name='registration_submit']")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
