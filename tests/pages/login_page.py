@@ -1,7 +1,6 @@
 from .base_page import BasePage
 from selenium.webdriver.common.by import By
 from .locators import LoginPageLocators
-import time
 from pages.locators import BasePageLocators
 
 

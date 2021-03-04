@@ -1,9 +1,8 @@
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
-from pages.base_page import BasePage
 from pages.basket_page import BasketPage
 import pytest
-import time
+
 
 @pytest.mark.login_guest
 class TestLoginFromMainPage():

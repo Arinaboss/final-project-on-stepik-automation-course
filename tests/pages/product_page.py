@@ -1,7 +1,5 @@
 from pages.base_page import BasePage
 from pages.locators import ProductPageLocators
-from pages.locators import BasePageLocators
-import time
 
 
 class ProductPage(BasePage):
